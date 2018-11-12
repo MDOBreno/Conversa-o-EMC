@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jcM-ed-CcH">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="SDW-9f-AYg">
+            <objects>
+                <viewController id="jcM-ed-CcH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f9R-aY-5IL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch" translatesAutoresizingMaskIntoConstraints="NO" id="PT4-3q-EoH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PT4-3q-EoH" firstAttribute="trailing" secondItem="BTc-1h-m4M" secondAttribute="trailing" id="0cm-3o-OD2"/>
+                            <constraint firstItem="PT4-3q-EoH" firstAttribute="top" secondItem="f9R-aY-5IL" secondAttribute="top" id="B8P-SQ-CUb"/>
+                            <constraint firstItem="PT4-3q-EoH" firstAttribute="bottom" secondItem="BTc-1h-m4M" secondAttribute="bottom" id="MD7-YR-nd1"/>
+                            <constraint firstItem="PT4-3q-EoH" firstAttribute="leading" secondItem="BTc-1h-m4M" secondAttribute="leading" id="uMO-8R-XXl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BTc-1h-m4M"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nkI-i5-KGR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1154.4000000000001" y="386.35682158920542"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Launch" width="422" height="777"/>
+    </resources>
+</document>

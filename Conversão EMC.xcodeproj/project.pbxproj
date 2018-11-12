@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		33AB8E5921998F5B006A995D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AB8E5821998F5B006A995D /* AppDelegate.swift */; };
-		33AB8E5B21998F5B006A995D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AB8E5A21998F5B006A995D /* ViewController.swift */; };
 		33AB8E5E21998F5B006A995D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33AB8E5C21998F5B006A995D /* Main.storyboard */; };
-		33AB8E6021998F6E006A995D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33AB8E5F21998F6E006A995D /* Assets.xcassets */; };
 		33AB8E6321998F6E006A995D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33AB8E6121998F6E006A995D /* LaunchScreen.storyboard */; };
+		33AB8E752199AD0A006A995D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33AB8E742199AD0A006A995D /* Assets.xcassets */; };
+		33AB8E792199B3B8006A995D /* QuestaoUmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AB8E782199B3B8006A995D /* QuestaoUmViewController.swift */; };
+		33AB8E7B2199B3E0006A995D /* QuestaoDoisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AB8E7A2199B3E0006A995D /* QuestaoDoisViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		33AB8E5521998F5B006A995D /* Conversão EMC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Conversão EMC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33AB8E5821998F5B006A995D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		33AB8E5A21998F5B006A995D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		33AB8E5D21998F5B006A995D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		33AB8E5F21998F6E006A995D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33AB8E6221998F6E006A995D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33AB8E6421998F6E006A995D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33AB8E742199AD0A006A995D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33AB8E782199B3B8006A995D /* QuestaoUmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestaoUmViewController.swift; sourceTree = "<group>"; };
+		33AB8E7A2199B3E0006A995D /* QuestaoDoisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestaoDoisViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		33AB8E5721998F5B006A995D /* Conversão EMC */ = {
 			isa = PBXGroup;
 			children = (
+				33AB8E742199AD0A006A995D /* Assets.xcassets */,
+				33AB8E6B219991E0006A995D /* View */,
+				33AB8E6A219991CA006A995D /* Controller */,
 				33AB8E5821998F5B006A995D /* AppDelegate.swift */,
-				33AB8E5A21998F5B006A995D /* ViewController.swift */,
-				33AB8E5C21998F5B006A995D /* Main.storyboard */,
-				33AB8E5F21998F6E006A995D /* Assets.xcassets */,
-				33AB8E6121998F6E006A995D /* LaunchScreen.storyboard */,
 				33AB8E6421998F6E006A995D /* Info.plist */,
 			);
 			path = "Conversão EMC";
+			sourceTree = "<group>";
+		};
+		33AB8E6A219991CA006A995D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				33AB8E782199B3B8006A995D /* QuestaoUmViewController.swift */,
+				33AB8E7A2199B3E0006A995D /* QuestaoDoisViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		33AB8E6B219991E0006A995D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				33AB8E6121998F6E006A995D /* LaunchScreen.storyboard */,
+				33AB8E5C21998F5B006A995D /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,7 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33AB8E6321998F6E006A995D /* LaunchScreen.storyboard in Resources */,
-				33AB8E6021998F6E006A995D /* Assets.xcassets in Resources */,
+				33AB8E752199AD0A006A995D /* Assets.xcassets in Resources */,
 				33AB8E5E21998F5B006A995D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +154,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33AB8E5B21998F5B006A995D /* ViewController.swift in Sources */,
+				33AB8E7B2199B3E0006A995D /* QuestaoDoisViewController.swift in Sources */,
 				33AB8E5921998F5B006A995D /* AppDelegate.swift in Sources */,
+				33AB8E792199B3B8006A995D /* QuestaoUmViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +305,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L5RH7482C6;
 				INFOPLIST_FILE = "Conversão EMC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -292,7 +313,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ProgramasBMO.Conversa-o-EMC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -303,6 +324,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L5RH7482C6;
 				INFOPLIST_FILE = "Conversão EMC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +332,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ProgramasBMO.Conversa-o-EMC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
