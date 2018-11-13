@@ -38,10 +38,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXL-g4-wiy">
-                                <rect key="frame" x="127" y="491" width="120" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXL-g4-wiy">
+                                <rect key="frame" x="127.5" y="545" width="120" height="53"/>
                                 <color key="backgroundColor" name="third"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="jEC-OF-SnS"/>
+                                    <constraint firstAttribute="width" constant="120" id="rbw-g6-WrI"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Calcular"/>
                                 <userDefinedRuntimeAttributes>
@@ -55,6 +58,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="69I-Vx-H43" firstAttribute="bottom" secondItem="OXL-g4-wiy" secondAttribute="bottom" constant="20" id="3AT-Oc-49n"/>
+                            <constraint firstItem="OXL-g4-wiy" firstAttribute="centerX" secondItem="peg-wO-6wh" secondAttribute="centerX" id="4Pv-fQ-B9I"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="69I-Vx-H43"/>
                     </view>
                     <navigationItem key="navigationItem" title="1 Questão" id="7UH-JF-GmB">
@@ -100,15 +107,18 @@
         <!--2 Questão-->
         <scene sceneID="ubi-mh-Bgn">
             <objects>
-                <viewController id="UUJ-MV-zjf" sceneMemberID="viewController">
+                <viewController id="UUJ-MV-zjf" customClass="QuestaoDoisViewController" customModule="Conversa_o_EMC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oGa-2o-u3J">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6UA-j2-Iuo">
-                                <rect key="frame" x="127" y="491" width="120" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6UA-j2-Iuo">
+                                <rect key="frame" x="127.5" y="545" width="120" height="53"/>
                                 <color key="backgroundColor" name="third"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Kkv-pP-ijn"/>
+                                    <constraint firstAttribute="height" constant="53" id="L6S-Z3-ZCI"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Calcular"/>
                                 <userDefinedRuntimeAttributes>
@@ -122,6 +132,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hwv-iu-KZb" firstAttribute="bottom" secondItem="6UA-j2-Iuo" secondAttribute="bottom" constant="20" id="NRD-ml-o4D"/>
+                            <constraint firstItem="6UA-j2-Iuo" firstAttribute="centerX" secondItem="oGa-2o-u3J" secondAttribute="centerX" id="TNC-U3-G2A"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hwv-iu-KZb"/>
                     </view>
                     <navigationItem key="navigationItem" title="2 Questão" id="dOI-Mh-FeQ">

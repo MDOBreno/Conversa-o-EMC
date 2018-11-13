@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3323FF63219A43C40000EBA2 /* QuestaoDoisResViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3323FF62219A43C40000EBA2 /* QuestaoDoisResViewController.swift */; };
+		3323FF65219A43DA0000EBA2 /* QuestaoUmResViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3323FF64219A43DA0000EBA2 /* QuestaoUmResViewController.swift */; };
 		33AB8E5921998F5B006A995D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AB8E5821998F5B006A995D /* AppDelegate.swift */; };
 		33AB8E5E21998F5B006A995D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33AB8E5C21998F5B006A995D /* Main.storyboard */; };
 		33AB8E6321998F6E006A995D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33AB8E6121998F6E006A995D /* LaunchScreen.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3323FF62219A43C40000EBA2 /* QuestaoDoisResViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestaoDoisResViewController.swift; sourceTree = "<group>"; };
+		3323FF64219A43DA0000EBA2 /* QuestaoUmResViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestaoUmResViewController.swift; sourceTree = "<group>"; };
 		33AB8E5521998F5B006A995D /* Conversão EMC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Conversão EMC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33AB8E5821998F5B006A995D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33AB8E5D21998F5B006A995D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -70,6 +74,8 @@
 			children = (
 				33AB8E782199B3B8006A995D /* QuestaoUmViewController.swift */,
 				33AB8E7A2199B3E0006A995D /* QuestaoDoisViewController.swift */,
+				3323FF62219A43C40000EBA2 /* QuestaoDoisResViewController.swift */,
+				3323FF64219A43DA0000EBA2 /* QuestaoUmResViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -157,6 +163,8 @@
 				33AB8E7B2199B3E0006A995D /* QuestaoDoisViewController.swift in Sources */,
 				33AB8E5921998F5B006A995D /* AppDelegate.swift in Sources */,
 				33AB8E792199B3B8006A995D /* QuestaoUmViewController.swift in Sources */,
+				3323FF63219A43C40000EBA2 /* QuestaoDoisResViewController.swift in Sources */,
+				3323FF65219A43DA0000EBA2 /* QuestaoUmResViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
