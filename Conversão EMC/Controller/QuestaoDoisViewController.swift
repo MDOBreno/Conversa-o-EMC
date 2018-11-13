@@ -12,11 +12,69 @@ class QuestaoDoisViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        self.hideKeyboardWhenTappedAround()
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard)))
+    }
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    @objc func dismissKeyboard() {
+        self.view.endEditing(true)
     }
     
-
+    @IBOutlet weak var swCC: UISwitch!
+    @IBOutlet weak var tfTensao: UITextField!
+    @IBOutlet weak var tfPotencia: UITextField!
+    @IBOutlet weak var tfCorrente: UITextField!
+    
+    var Rc = Float()
+    var Rxm = Float()
+    
+    @IBAction func Calcular(_ sender: UIButton) {
+        if let T = Float(tfTensao.text!),
+            let P = Float(tfPotencia.text!),
+           let I = Float(tfCorrente.text!) {
+            
+            var Ixm = Float()
+            if swCC.isOn {
+                Rc = P / pow(I,2)
+                Rxm = sqrt( pow((T/I),2) - powf(Rc,2) )
+            } else {
+                Rc = pow(T,2) / P
+                Ixm = sqrt( powf(I,2) - powf((T/Rc), 2) )
+                Rxm = (-T) / Ixm
+            }
+            performSegue(withIdentifier: "questaoDoisResViewController", sender: nil)
+            
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! QuestaoDoisResViewController
+        
+        if swCC.isOn {
+            vc.r = "Req"
+            vc.x = "Xeq"
+        } else {
+            vc.r = "Rc"
+            vc.x = "Xm"
+        }
+        vc.rc = NSString(format: "%.2f", Rc) as String
+        vc.xm = NSString(format: "%.2f", Rxm) as String
+        
+        let transition:CATransition = CATransition()
+        transition.duration = 0.5
+        transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        transition.type = CATransitionType.moveIn
+        transition.subtype = CATransitionSubtype.fromBottom
+        self.navigationController!.view.layer.add(transition, forKey: kCATransition)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
     /*
     // MARK: - Navigation
 

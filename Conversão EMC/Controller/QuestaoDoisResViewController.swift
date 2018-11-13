@@ -10,9 +10,22 @@ import UIKit
 
 class QuestaoDoisResViewController: UIViewController {
 
+    @IBOutlet weak var tfRc: UITextField!
+    @IBOutlet weak var tfXm: UITextField!
+    @IBOutlet weak var lbR: UILabel!
+    @IBOutlet weak var lbX: UILabel!
+    
+    var rc = String()
+    var r = String()
+    var xm = String()
+    var x = String()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tfRc.text = rc
+        lbR.text = r
+        tfXm.text = xm
+        lbX.text = x
         // Do any additional setup after loading the view.
     }
     
