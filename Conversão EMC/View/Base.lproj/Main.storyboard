@@ -34,19 +34,19 @@
         <scene sceneID="Bg7-io-wzC">
             <objects>
                 <viewController id="SSz-hm-LqO" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="peg-wO-6wh">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="peg-wO-6wh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXL-g4-wiy">
-                                <rect key="frame" x="127.5" y="545" width="120" height="53"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXL-g4-wiy">
+                                <rect key="frame" x="37.5" y="465" width="300" height="53"/>
                                 <color key="backgroundColor" name="third"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="53" id="jEC-OF-SnS"/>
-                                    <constraint firstAttribute="width" constant="120" id="rbw-g6-WrI"/>
+                                    <constraint firstAttribute="height" constant="53" id="Eeh-8N-Va8"/>
+                                    <constraint firstAttribute="width" constant="300" id="rbw-g6-WrI"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Calcular"/>
+                                <state key="normal" title="Curvas Sobrepostas"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="15"/>
@@ -56,23 +56,63 @@
                                     <segue destination="nfg-zS-vyF" kind="show" id="aLY-Sa-ddn"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFG-Xc-6PX">
+                                <rect key="frame" x="37" y="164" width="300" height="53"/>
+                                <color key="backgroundColor" name="third"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="53" id="Wby-Gt-age"/>
+                                    <constraint firstAttribute="height" constant="53" id="uHi-Ex-Ijd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Corrente Nominal"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Y8I-A5-Mis" kind="show" id="uVT-cd-c79"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCT-cV-ap6">
+                                <rect key="frame" x="37.5" y="307" width="300" height="53"/>
+                                <color key="backgroundColor" name="third"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="F9h-ZU-eDo"/>
+                                    <constraint firstAttribute="width" constant="300" id="kZ6-mm-kUo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Corrente de Excitação"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="yUk-nG-yKj" kind="show" id="0Nz-ar-Gcn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="69I-Vx-H43" firstAttribute="bottom" secondItem="OXL-g4-wiy" secondAttribute="bottom" constant="20" id="3AT-Oc-49n"/>
                             <constraint firstItem="OXL-g4-wiy" firstAttribute="centerX" secondItem="peg-wO-6wh" secondAttribute="centerX" id="4Pv-fQ-B9I"/>
+                            <constraint firstAttribute="bottom" secondItem="OXL-g4-wiy" secondAttribute="bottom" constant="100" id="5BW-rT-5xm"/>
+                            <constraint firstItem="gFG-Xc-6PX" firstAttribute="top" secondItem="69I-Vx-H43" secondAttribute="top" constant="100" id="Mkh-so-lkX"/>
+                            <constraint firstItem="nCT-cV-ap6" firstAttribute="centerX" secondItem="peg-wO-6wh" secondAttribute="centerX" id="bmf-Bw-q3V"/>
+                            <constraint firstItem="nCT-cV-ap6" firstAttribute="centerY" secondItem="peg-wO-6wh" secondAttribute="centerY" id="qQ2-yT-dIF"/>
+                            <constraint firstItem="gFG-Xc-6PX" firstAttribute="centerY" secondItem="peg-wO-6wh" secondAttribute="centerY" id="wek-2y-IjK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="69I-Vx-H43"/>
                     </view>
                     <navigationItem key="navigationItem" title="1 Questão" id="7UH-JF-GmB">
-                        <barButtonItem key="backBarButtonItem" title="Argumentos" id="R4f-5a-gLF"/>
+                        <barButtonItem key="backBarButtonItem" title="Gráficos" id="R4f-5a-gLF"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YDK-ZL-PqE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1053.5999999999999" y="2383.3583208395803"/>
+            <point key="canvasLocation" x="370" y="2375"/>
         </scene>
-        <!--Resultado-->
+        <!--Sobreposição-->
         <scene sceneID="MTZ-ZX-n1y">
             <objects>
                 <viewController id="nfg-zS-vyF" sceneMemberID="viewController">
@@ -82,11 +122,11 @@
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="WL3-tt-GuZ"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Resultado" id="OeX-a7-Uqk"/>
+                    <navigationItem key="navigationItem" title="Sobreposição" id="OeX-a7-Uqk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DuD-XY-GgI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1054" y="3125"/>
+            <point key="canvasLocation" x="1540" y="3146"/>
         </scene>
         <!--Resultado-->
         <scene sceneID="pZF-LS-gkr">
@@ -156,7 +196,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nUv-UQ-wMR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2025" y="3125"/>
+            <point key="canvasLocation" x="2710" y="3147"/>
         </scene>
         <!--2 Questão-->
         <scene sceneID="ubi-mh-Bgn">
@@ -296,7 +336,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xdb-zl-EVv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2024.8" y="2382.4587706146926"/>
+            <point key="canvasLocation" x="2711" y="2374"/>
         </scene>
         <!--1ª Questão-->
         <scene sceneID="cD6-Ht-PnX">
@@ -319,7 +359,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3KW-Am-fny" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1053.5999999999999" y="1654.7226386806599"/>
+            <point key="canvasLocation" x="369" y="1647"/>
         </scene>
         <!--2ª Questão-->
         <scene sceneID="yPz-P6-jlQ">
@@ -342,7 +382,39 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="337-VK-eBQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2026" y="1655"/>
+            <point key="canvasLocation" x="2711" y="1647"/>
+        </scene>
+        <!--Excitação-->
+        <scene sceneID="g5I-FD-fml">
+            <objects>
+                <viewController id="yUk-nG-yKj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t5l-Cc-okQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="jrA-t8-qyC"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Excitação" id="wRf-7s-01z"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="92G-Ea-Csv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="369" y="3146"/>
+        </scene>
+        <!--Nominal-->
+        <scene sceneID="dGy-NN-kHB">
+            <objects>
+                <viewController id="Y8I-A5-Mis" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b0V-j0-ZbL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Hom-Ey-fpK"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Nominal" id="UBl-mt-6nE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Em0-Ph-qVW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-812" y="3146"/>
         </scene>
     </scenes>
     <resources>
@@ -358,9 +430,6 @@
         </namedColor>
         <namedColor name="second">
             <color red="1" green="0.0078431372549019607" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="third">
-            <color red="0.25490196078431371" green="0.83529411764705885" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="third">
             <color red="0.25490196078431371" green="0.83529411764705885" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
