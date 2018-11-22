@@ -119,14 +119,25 @@
                     <view key="view" contentMode="scaleToFill" id="GCt-jS-ys5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ex e nom" translatesAutoresizingMaskIntoConstraints="NO" id="1di-5D-4Wj">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1di-5D-4Wj" firstAttribute="bottom" secondItem="WL3-tt-GuZ" secondAttribute="bottom" id="4EP-Rc-kHJ"/>
+                            <constraint firstItem="1di-5D-4Wj" firstAttribute="top" secondItem="WL3-tt-GuZ" secondAttribute="top" id="8xj-Zf-yhA"/>
+                            <constraint firstItem="1di-5D-4Wj" firstAttribute="leading" secondItem="WL3-tt-GuZ" secondAttribute="leading" id="LcB-7u-2Y7"/>
+                            <constraint firstItem="1di-5D-4Wj" firstAttribute="trailing" secondItem="WL3-tt-GuZ" secondAttribute="trailing" id="PUU-Rk-Tqu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="WL3-tt-GuZ"/>
                     </view>
                     <navigationItem key="navigationItem" title="Sobreposição" id="OeX-a7-Uqk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DuD-XY-GgI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1540" y="3146"/>
+            <point key="canvasLocation" x="1540" y="3145.2773613193408"/>
         </scene>
         <!--Resultado-->
         <scene sceneID="pZF-LS-gkr">
@@ -391,14 +402,25 @@
                     <view key="view" contentMode="scaleToFill" id="t5l-Cc-okQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ex" translatesAutoresizingMaskIntoConstraints="NO" id="e2I-Yi-KTJ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="e2I-Yi-KTJ" firstAttribute="bottom" secondItem="jrA-t8-qyC" secondAttribute="bottom" id="1e8-Tb-yY8"/>
+                            <constraint firstItem="e2I-Yi-KTJ" firstAttribute="trailing" secondItem="jrA-t8-qyC" secondAttribute="trailing" id="euK-tG-Su0"/>
+                            <constraint firstItem="e2I-Yi-KTJ" firstAttribute="top" secondItem="jrA-t8-qyC" secondAttribute="top" id="gjN-UW-J94"/>
+                            <constraint firstItem="e2I-Yi-KTJ" firstAttribute="leading" secondItem="jrA-t8-qyC" secondAttribute="leading" id="kWP-SL-7zx"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="jrA-t8-qyC"/>
                     </view>
                     <navigationItem key="navigationItem" title="Excitação" id="wRf-7s-01z"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="92G-Ea-Csv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="369" y="3146"/>
+            <point key="canvasLocation" x="368.80000000000001" y="3145.2773613193408"/>
         </scene>
         <!--Nominal-->
         <scene sceneID="dGy-NN-kHB">
@@ -407,17 +429,31 @@
                     <view key="view" contentMode="scaleToFill" id="b0V-j0-ZbL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nom" translatesAutoresizingMaskIntoConstraints="NO" id="zbE-4C-Dao">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zbE-4C-Dao" firstAttribute="bottom" secondItem="Hom-Ey-fpK" secondAttribute="bottom" id="F63-On-Uv3"/>
+                            <constraint firstItem="zbE-4C-Dao" firstAttribute="trailing" secondItem="Hom-Ey-fpK" secondAttribute="trailing" id="a2C-X8-e0P"/>
+                            <constraint firstItem="zbE-4C-Dao" firstAttribute="top" secondItem="Hom-Ey-fpK" secondAttribute="top" id="igS-dq-09d"/>
+                            <constraint firstItem="zbE-4C-Dao" firstAttribute="leading" secondItem="Hom-Ey-fpK" secondAttribute="leading" id="yyY-Ne-Uys"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Hom-Ey-fpK"/>
                     </view>
                     <navigationItem key="navigationItem" title="Nominal" id="UBl-mt-6nE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Em0-Ph-qVW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-812" y="3146"/>
+            <point key="canvasLocation" x="-812" y="3145.2773613193408"/>
         </scene>
     </scenes>
     <resources>
+        <image name="ex" width="342" height="618"/>
+        <image name="ex e nom" width="337" height="604"/>
+        <image name="nom" width="342" height="623"/>
         <image name="questaoDois" width="20" height="20"/>
         <image name="questaoDois Selec" width="20" height="20"/>
         <image name="questaoUm" width="20" height="20"/>
